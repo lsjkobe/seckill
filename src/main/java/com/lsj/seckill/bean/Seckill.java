@@ -11,7 +11,7 @@ public class Seckill {
     private int number;
     private Date startTime;
     private Date endTime;
-    private Date CreateIime;
+    private Date createTime;
 
     @Override
     public String toString() {
@@ -21,7 +21,7 @@ public class Seckill {
                 ", number=" + number +
                 ", startTime=" + startTime +
                 ", endTime=" + endTime +
-                ", CreateIime=" + CreateIime +
+                ", createTime=" + createTime +
                 '}';
     }
 
@@ -65,11 +65,11 @@ public class Seckill {
         this.endTime = endTime;
     }
 
-    public Date getCreateIime() {
-        return CreateIime;
+    public Date getCreateTime() {
+        return createTime;
     }
 
-    public void setCreateIime(Date createIime) {
-        CreateIime = createIime;
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
     }
 }
