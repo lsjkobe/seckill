@@ -5,6 +5,7 @@ import org.apache.ibatis.annotations.Param;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by Administrator on 2017/4/4.
@@ -33,4 +34,10 @@ public interface SeckillDao {
      */
     //Parameter 'offet' not found. Available parameters are [arg0, limit, param1, param2]错误用@Param解决
     List<Seckill> queryAll(@Param("offet")int offet,@Param("limit") int limit);
+
+    /**
+     * 使用存储过程执行秒杀
+     * @param paramMap
+     */
+    void killByProcedure(Map<String, Object> paramMap);
 }
